@@ -73,34 +73,6 @@ body {
   color: red;
 }
 
-.rightMenu ul li a:hover {
-  color: red;
-}
-
-.rightMenu {
-  float: right;
-  display: inline-block;
-  color: black;
-  line-height: 2em;
-  margin-right: 50px;
-}
-
-.rightMenu ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-.rightMenu ul li {
-  display: inline-block;
-  padding-left: 10px;
-}
-
-.rightMenu ul li a {
-  color: white;
-  font-size: 14px;
-  text-decoration: none;
-}
 
 #largeImage {
   padding: 200px 25px;
@@ -273,6 +245,87 @@ video {
   background: rgba(0,0,0,.6)
 }
 
+#videoSection {
+  width: 100%;
+  background: black;
+}
+
+.row {
+  font-size: 0;
+  width: 100%;
+}
+
+.videoBox {
+  display: inline-block;
+  background: red;
+  width: 20%;
+  height: 200px;
+  font-size: 16px;
+  margin-top: 2.5%;
+  margin-bottom: 2.5%;
+  color: white;
+
+}
+
+.videoName a {
+  color: white;
+  text-decoration: none;
+  font-weight: normal;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.video1 {
+  background: -webkit-linear-gradient(45deg, rgb(142,14,0,0.4)
+  0%, #000000 100%), url("thirdplanet.jpg");
+  background-size: cover;
+  -web-kit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+}
+
+.video2 {
+  background: -webkit-linear-gradient(45deg, rgb(142,14,0,0.6)
+  0%, #000000 100%), url("cheburashka.jpeg");
+  background-size: cover;
+  -web-kit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+}
+
+.video3 {
+  background: -webkit-linear-gradient(45deg, rgb(142,14,0,0.4)
+  0%, #000000 100%), url("threefromprostokvashino.jpeg");
+  background-size: cover;
+  -web-kit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+}
+
+.video4 {
+  background: -webkit-linear-gradient(45deg, rgb(142,14,0,0.4)
+  0%, #000000 100%), url("hippo.jpeg");
+  background-size: cover;
+  -web-kit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+}
+
+.video5 {
+  background: -webkit-linear-gradient(45deg, rgb(142,14,0,0.4)
+  0%, #000000 100%), url("penguins.jpg");
+  background-size: cover;
+  -web-kit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+}
+
+.videoName a:hover {
+  font-weight: bold;
+  color: red;
+  font-size: 16px;
+}
+
 input[type=range] {
   -webkit-appearance: none;
   background: transparent;
@@ -326,4 +379,15 @@ input[type=range]::-moz-range-thumb {
   border-radius: 50px;
   background: #ffc600;
   cursor: pointer;
+}
+
+@media screen and (max-width: 600px) {
+  .videoBox {
+    width: 95%;
+    margin: 2.5%;
+  }
+  .videoBoxes h4 {
+    font-size: 60px;
+  }
+
 }
