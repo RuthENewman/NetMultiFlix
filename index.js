@@ -1,10 +1,10 @@
 const player = document.querySelector('.player');
-const video = player.querySelector('.viewer');
-const progress = player.querySelector('.progress')
-const progressBar = player.querySelector('.progressBar');
-const toggleButton = player.querySelector('.toggle');
-const skipButtons = player.querySelectorAll('[data-skip]');
-const ranges = player.querySelectorAll('.playerSlider');
+const video = document.querySelector('.viewer');
+const progress = document.querySelector('.progress')
+const progressBar = document.querySelector('.progressBar');
+const toggleButton = document.querySelector('.toggle');
+const skipButtons = document.querySelectorAll('[data-skip]');
+const ranges = document.querySelectorAll('.playerSlider');
 const fullScreenButton = document.querySelector('.viewFullScreenButton');
 
 function initialize() {
