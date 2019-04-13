@@ -44,8 +44,18 @@ function scrub(event) {
 }
 
 function openFullScreen() {
+  if (video.requestFullScreen) {
+    video.requestFullScreen();
+  } else if (video.mozRequestFullScreen) {
+      video.mozRequestFullScreen();
+    } else if (video.webkitRequestFullScreen) {
+        video.webkitRequestFullScreen();
+      } else if (video.msRequestFullScreen) {
+        video.msRequestFullScreen();
+      }
 
-}
+  }
+
 
 video.addEventListener('click', playAndPause)
 toggleButton.addEventListener('click', playAndPause)
